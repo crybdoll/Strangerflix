@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StrangerFlix</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Creepster&family=Chakra+Petch:wght@300;400;600&display=swap"
-        rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Chakra+Petch:wght@300;400;600&display=swap" rel="stylesheet">
 
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: "Chakra Petch", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header estilo Stranger Things */
+        header {
+            border-bottom: solid 4px #b30000;
+            padding: 20px;
+            font-size: 42px;
+            text-align: center;
+            font-family: "Creepster", cursive;
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000, 0 0 20px #b30000, 0 0 40px #ff3333;
+            letter-spacing: 3px;
+        }
+
+        /* Seção central */
+        section {
+            background: radial-gradient(circle, rgba(10, 0, 0, 0.95) 0%, rgba(0, 0, 0, 1) 100%);
+            padding: 80px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            min-height: 80vh;
+        }
+
+        /* Texto chamativo */
+        .chamada-texto {
+            max-width: 400px;
+            text-align: left;
+        }
+
+        .chamada-texto h1 {
+            font-size: 36px;
+            color: #ff3333;
+            text-shadow: 0 0 10px #ff0000, 0 0 20px #660000;
+        }
+
+        .chamada-texto p {
+            font-size: 20px;
+            color: #aaa;
+        }
+    </style>
+</head>
 <body>
     <header>StrangerFlix</header>
     <section>
@@ -28,68 +73,4 @@
         </div>
     </section>
 </body>
-
 </html>
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Corpo do site */
-body {
-    background: linear-gradient(to bottom, #000000 0%, #110000 100%);
-    color: #ffffff;
-    font-family: "Chakra Petch", sans-serif;
-    min-height: 100vh;
-}
-
-/* Header estilo Stranger Things */
-header {
-    border-bottom: 4px solid #b30000;
-    padding: 20px;
-    font-size: 42px;
-    text-align: center;
-    font-family: "Creepster", cursive;
-    color: #ff0000;
-    text-shadow: 0 0 10px #ff0000, 0 0 20px #b30000, 0 0 40px #ff3333;
-    letter-spacing: 3px;
-    background: rgba(0, 0, 0, 0.7); /* deixa meio transparente */
-}
-
-/* Seção central */
-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 80px 20px;
-    min-height: calc(100vh - 100px); /* header conta 100px aprox */
-}
-
-/* Texto chamativo */
-.chamada-texto {
-    max-width: 400px;
-}
-
-.chamada-texto h1 {
-    font-size: 36px;
-    color: #ff3333;
-    text-shadow: 0 0 10px #ff0000, 0 0 20px #660000;
-    line-height: 1.2;
-}
-
-.chamada-texto p {
-    font-size: 20px;
-    color: #aaa;
-}
-
-/* iframe do vídeo responsivo */
-iframe {
-    max-width: 100%;
-    height: auto;
-    border: none;
-    border-radius: 8px;
-}
