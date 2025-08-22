@@ -30,14 +30,19 @@
 </body>
 
 </html>
-
-/* Corpo da página */
-body {
-    background-color: black;
-    color: white;
-    font-family: "Chakra Petch", sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+    background: linear-gradient(to bottom, #000000 0%, #110000 100%);
+    color: #ffffff;
+    font-family: "Chakra Petch", sans-serif;
+    min-height: 100vh;
 }
 
 /* Header estilo Stranger Things */
@@ -50,35 +55,30 @@ header {
     color: #ff0000;
     text-shadow: 0 0 10px #ff0000, 0 0 20px #b30000, 0 0 40px #ff3333;
     letter-spacing: 3px;
-    position: sticky;
-    top: 0;
-    background-color: black;
-    z-index: 10;
+    background: rgba(0, 0, 0, 0.7); /* deixa meio transparente */
 }
 
 /* Seção central */
 section {
-    background: radial-gradient(circle, rgba(10, 0, 0, 0.95) 0%, rgba(0, 0, 0, 1) 100%);
-    padding: 80px 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    min-height: 80vh;
+    padding: 80px 20px;
+    min-height: calc(100vh - 100px); /* header conta 100px aprox */
 }
 
 /* Texto chamativo */
 .chamada-texto {
     max-width: 400px;
-    text-align: left;
 }
 
 .chamada-texto h1 {
     font-size: 36px;
     color: #ff3333;
     text-shadow: 0 0 10px #ff0000, 0 0 20px #660000;
-    margin-bottom: 10px;
+    line-height: 1.2;
 }
 
 .chamada-texto p {
@@ -86,11 +86,10 @@ section {
     color: #aaa;
 }
 
-/* Vídeo responsivo */
+/* iframe do vídeo responsivo */
 iframe {
     max-width: 100%;
     height: auto;
-    border: 3px solid #ff0000;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #ff0000;
+    border: none;
+    border-radius: 8px;
 }
