@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrangerFlix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Chakra+Petch:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>StrangerFlix</header>
+    <section>
+        <div class="chamada-texto">
+            <h1>O Mundo Invertido Espera Por Você</h1>
+            <p>#StrangerThings</p>
+        </div>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/U4sndXXtrtE"
+                title="Trailer Stranger Things" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+</body>
+
+</html>
+body {
+    background-color: black;
+    color: white;
+    font-family: "Chakra Petch", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header estilo Stranger Things */
+header {
+    border-bottom: solid 4px #b30000;
+    padding: 20px;
+    font-size: 42px;
+    text-align: center;
+    font-family: "Creepster", cursive;
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #b30000, 0 0 40px #ff3333;
+    letter-spacing: 3px;
+}
+
+/* Seção central */
+section {
+    background: radial-gradient(circle, rgba(10, 0, 0, 0.95) 0%, rgba(0, 0, 0, 1) 100%);
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-height: 80vh;
+}
+
+/* Texto chamativo */
+.chamada-texto {
+    max-width: 400px;
+    text-align: left;
+}
+
+.chamada-texto h1 {
+    font-size: 36px;
+    color: #ff3333;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #660000;
+}
+
+.chamada-texto p {
+    font-size: 20px;
+    color: #aaa;
+}
