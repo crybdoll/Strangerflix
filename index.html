@@ -31,6 +31,7 @@
 
 </html>
 
+/* Corpo da página */
 body {
     background-color: black;
     color: white;
@@ -41,7 +42,7 @@ body {
 
 /* Header estilo Stranger Things */
 header {
-    border-bottom: solid 4px #b30000;
+    border-bottom: 4px solid #b30000;
     padding: 20px;
     font-size: 42px;
     text-align: center;
@@ -49,6 +50,10 @@ header {
     color: #ff0000;
     text-shadow: 0 0 10px #ff0000, 0 0 20px #b30000, 0 0 40px #ff3333;
     letter-spacing: 3px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 10;
 }
 
 /* Seção central */
@@ -56,6 +61,7 @@ section {
     background: radial-gradient(circle, rgba(10, 0, 0, 0.95) 0%, rgba(0, 0, 0, 1) 100%);
     padding: 80px 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 50px;
@@ -72,9 +78,19 @@ section {
     font-size: 36px;
     color: #ff3333;
     text-shadow: 0 0 10px #ff0000, 0 0 20px #660000;
+    margin-bottom: 10px;
 }
 
 .chamada-texto p {
     font-size: 20px;
     color: #aaa;
+}
+
+/* Vídeo responsivo */
+iframe {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #ff0000;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ff0000;
 }
